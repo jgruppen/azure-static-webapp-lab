@@ -21,8 +21,8 @@ jobs:
       
       - name: Modify .env variables
         run: |
-          sed -i 's/(REACT_APP_BACKEND_URI=)(.*)/$1http:\/\/wwww.google.com/g' .env          
-          sed -i 's/(REACT_APP_AAD_CLIENT_ID=)(.*)/$1b37b671f-697f-4e17-983b-7ae76abc21af/g' .env
+          sed -i ''s/REACT_APP_BACKEND_URI=.*/REACT_APP_BACKEND_URI=https:\/\/www.google.com/g' .env
+          sed -i ''s/REACT_APP_AAD_CLIENT_ID=.*/REACT_APP_AAD_CLIENT_ID=b37b671f-697f-4e17-983b-7ae76abc21af/g' .env
           
       - name: Build And Deploy
         id: builddeploy
